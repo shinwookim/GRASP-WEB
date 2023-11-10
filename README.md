@@ -1,2 +1,2 @@
 # GRASP-WEB
-portal for composing repeatable workflows
+Web Workflow for GRASP-HPO
