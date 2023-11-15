@@ -1,0 +1,33 @@
+{% extends "default.html" %}
+{% block title %}Results | {{ super() }}{% endblock%}
+{% block body %}
+<h1>Sample Results!</h1>
+<div class="row">
+
+    <div class="col text-center">
+        <img src="https://sites.pitt.edu/~shk148/assets/img/projects/PPG-ML1.png" class="w-100" />
+    </div>
+    <div class="col text-center">
+        <h2>Summary</h2>
+        <p class="text-left">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Tellus rutrum tellus pellentesque eu tincidunt tortor aliquam nulla. Neque convallis a
+            cras semper auctor neque. Nunc mi ipsum faucibus vitae aliquet nec. Feugiat scelerisque varius morbi enim.
+            Vitae congue mauris rhoncus aenean. Varius quam quisque id diam vel quam elementum pulvinar etiam. Lorem
+            ipsum dolor sit amet consectetur adipiscing elit duis. Gravida quis blandit turpis cursus in hac habitasse
+            platea. Orci eu lobortis elementum nibh tellus molestie nunc. Placerat in egestas erat imperdiet sed. In hac
+            habitasse platea dictumst quisque sagittis purus sit. Ullamcorper dignissim cras tincidunt lobortis. Eget mi
+            proin sed libero. Mi sit amet mauris commodo quis imperdiet massa. Gravida arcu ac tortor dignissim
+            convallis aenean et. Consequat semper viverra nam libero justo laoreet sit amet. Nisl tincidunt eget nullam
+            non nisi est. Mattis ullamcorper velit sed ullamcorper morbi. Ut lectus arcu bibendum at.</p>
+    </div>
+</div>
+<div>
+    <h2>Meaningful Statistics</h2>
+    <ul>
+        <li>Best Alg: ...</li>
+        <li>F1 Score: ...</li>
+    </ul>
+</div>
+<button type="button" class="btn btn-primary btn-lg btn-block">Download Results</button>
+{% endblock %}
