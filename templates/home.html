@@ -1,14 +1,19 @@
 {% extends "default.html" %} {% block title %}Home | {{ super() }}{% endblock%}
 {% block body %}
+<div class="jumbotron">
+  <h1 class="display-4">GRASP-HPO</h1>
+  <p class="lead">
+    <strong>GRASP-HPO</strong> is a novel method of optimizing Hyperparameters
+    in machine learning models.
+  </p>
 
-<h1>GRASP-HPO</h1>
-
-<a
-  href="{{ url_for('experiment') }}"
-  type="button"
-  class="btn btn-primary btn-lg"
->
-  Create New Experiment
-</a>
+  <a
+    href="{{ url_for('experiment') }}"
+    type="button"
+    class="btn btn-primary btn-lg"
+  >
+    Create New Experiment
+  </a>
+</div>
 
 {% endblock %}
