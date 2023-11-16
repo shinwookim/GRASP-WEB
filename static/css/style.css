@@ -37,16 +37,19 @@ h1 {
   font-weight: 700;
   margin-bottom: 49px;
 }
+
 h2 {
   font-size: 2.3rem;
   font-weight: 700;
   margin: 60px 0 30px;
 }
+
 h3 {
   font-size: 1.8rem;
   margin: 50px 0 25px;
   font-weight: 700;
 }
+
 h4 {
   font-size: 1.4rem;
   font-weight: 700;
@@ -54,6 +57,7 @@ h4 {
   letter-spacing: 0.05em;
   margin: 30px 0 15px;
 }
+
 p {
   margin: 0 0 25px;
 }
@@ -62,18 +66,22 @@ p {
   margin-top: 25px;
   margin-bottom: 50px;
 }
+
 .main-container p,
 ul {
   margin: 0 0 25px;
 }
+
 .site-identity {
   font-family: "cooper_hewittmedium", "Open Sans", "Nelvetica Neue", arial,
     sans-serif;
   line-height: 1;
 }
+
 .site-identity a {
   color: #fff;
 }
+
 .site-identity a:hover {
   color: #fff;
   text-decoration: none;
@@ -100,14 +108,17 @@ ul {
   padding: 10px 0;
   margin: 0 0 0 -15px;
 }
+
 .header .pitt-shield img {
   width: 148px;
   height: auto;
 }
+
 .header .site-identity {
   font-size: 2.5rem;
   margin-top: 15px;
 }
+
 /* Secondary Links */
 
 .secondary-links {
@@ -157,10 +168,12 @@ ul {
   color: #fff;
   padding: 35px 0;
 }
+
 .footer h3 {
   font-size: 1.5rem;
   margin: 0 0 10px;
 }
+
 .footer a {
   color: #ffb81c;
   text-decoration: none;
@@ -179,14 +192,17 @@ ul {
 .footer .site-identity {
   margin: 12px 0 0 37px;
 }
+
 .footer .site-identity a {
   color: #fff;
   font-size: 2rem;
 }
+
 .footer .site-identity a:hover {
   color: #fff;
   text-decoration: none;
 }
+
 .footer-site_name {
   color: #fff;
   text-decoration: none;
@@ -254,26 +270,40 @@ ul {
     margin-top: 50px;
     margin-bottom: 50px;
   }
+
   .pitt-shield {
     float: left;
   }
+
   .site-identity {
     float: left;
   }
+
   .header .site-identity {
     margin: 5px 0 0 20px;
     padding: 10px 0 0 20px;
-    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    /* border-left: 1px solid rgba(255, 255, 255, 0.3); */
   }
+
+  .header .site-identity span,
+  .footer .site-identity span {
+    font-size: 1.5rem;
+    font-weight: 400;
+    display: block;
+    margin: 0 0 5px 1px;
+  }
+
   .footer .site-identity {
     margin: 5px 0 0 16px;
     padding: 10px 0 0 16px;
     border-left: 1px solid rgba(255, 255, 255, 0.3);
   }
+
   .footer .sections {
     columns: 2;
     display: flex;
   }
+
   .footer .sections section {
     width: 30%;
   }
@@ -285,9 +315,9 @@ ul {
     margin-bottom: 75px;
   }
 }
+
 @media screen and (min-width: 1200px) {
-  .header .site-identity {
-  }
-  .footer .site-identity {
-  }
+  .header .site-identity {}
+
+  .footer .site-identity {}
 }
