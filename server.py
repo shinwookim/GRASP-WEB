@@ -8,6 +8,11 @@ def hello_world():
     return render_template("home.html")
 
 
+@app.route("/experiment")
+def experiment():
+    return render_template("experiment.html")
+
+
 @app.route("/results")
 def sample_results():
     return render_template("results.html")
