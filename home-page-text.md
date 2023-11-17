@@ -1,0 +1,1 @@
+Identifying the right set of hyperparameters to use is critical in training any machine learning model. Here, we introduce a novel method of tuning hyperparameters, GRASP-HPO, which applies the principle of Greedy Randomized Adaptive Search Procedure metaheuristic and evaluate its effectiveness.
