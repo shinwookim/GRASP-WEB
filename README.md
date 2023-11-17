@@ -10,4 +10,4 @@ FLASK_APP=app
 FLASK_ENV=development
 SECRET_KEY=verysecretkey
 ```
-Once that is done, just run flask run in the GRASP-WEB folder.
+Once that is done, just use flask run in the GRASP-WEB folder.
