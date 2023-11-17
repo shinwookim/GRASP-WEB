@@ -10,12 +10,20 @@ def create_app(config_class = Config):
 
     # Register blueprints here
     from app.home import bp as home_bp
-    app.register_blueprint(home_bp, url_prefix = "/")
+    app.register_blueprint(home_bp, url_prefix = "/") # Register the home blueprint with the app, with the url prefix "/"
 
     from app.experiment import bp as experiment_bp
-    app.register_blueprint(experiment_bp, url_prefix = "/experiment")
+    app.register_blueprint(experiment_bp, url_prefix = "/experiment") # Register the experiment blueprint with the app, with the url prefix "/experiment"
 
     from app.results import bp as results_bp
-    app.register_blueprint(results_bp, url_prefix = "/results")
+    app.register_blueprint(results_bp, url_prefix = "/results") # Register the results blueprint with the app, with the url prefix "/results"
+
+    '''
+    url_prefix is mainly used for jinja2 url_for() function, 
+    which generates a URL to the given endpoint with the method provided.
+    
+    For example, url_for("results.index") will return "/results/" instead of 
+    "/".
+    '''
 
     return app
