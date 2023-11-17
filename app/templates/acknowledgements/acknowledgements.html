@@ -1,0 +1,52 @@
+{% extends "default.html" %}
+{% block title %}Acknowledgements | {{ super() }}{% endblock%}
+{% block body %}
+<h1>Acknowledgements</h1>
+<div class="row">
+    <div class="col">
+        <p>
+            GRASP-HPO and GRASP-WEB were developed by:
+        <ul>
+            <li>Shinwoo Kim<sup>1</sup></li>
+            <li>Enoch Li<sup>1</sup></li>
+            <li>Jack Bellamy<sup>1</sup></li>
+            <li>Zi Han Ding<sup>1</sup></li>
+            <li>Zane Kissel<sup>1</sup></li>
+            <li>Gabriel Otsuka<sup>2</sup></li>
+        </ul>
+        and overseen by:
+        <ul>
+            <li>Dr. Daniel Mossé<sup>1</sup> and</li>
+            <li>Dr. Silvio E. Quincozes<sup>2</sup></li>
+        </ul>
+
+        This project is a collaboration between the University of Pittsburgh and the Federal University of Pampa.<br />
+
+        </p>
+        <sup>1 : University of Pittsburgh</sup><br />
+        <sup>2 : Federal University of Pampa</sup>
+
+    </div>
+    <div class="col border-left">
+        <p>
+            The GRASP-HPO project is proud to use and support the following software projects.
+        <ul>
+            <li><a href="https://www.ray.io/">Ray</a> - Python library for easy machine learning applications.</li>
+            <li><a href="https://www.python.org/">Python</a> - A robust scripting language.</li>
+            <li><a href="https://flask.palletsprojects.com/en/3.0.x/">Flask</a> - A framework written in Python that
+                powers this apps</li>
+            <li>and so much more.</li>
+        </ul>
+        </p>
+        <p>
+            We would also like to thank the Office of University Communications and Marketing at the University of
+            Pittsburgh for providing much of the CSS that is used in this app.
+        </p>
+    </div>
+</div>
+<hr />
+
+<script src="{{ url_for('static', filename='js/form-wizzard.js') }}" type="text/javascript"></script>
+{% endblock %}
+
+<!-- Form Wizzard Adopted From: https://www.w3schools.com/howto/howto_js_form_steps.asp -->

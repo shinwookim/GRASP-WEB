@@ -18,6 +18,9 @@ def create_app(config_class = Config):
     from app.results import bp as results_bp
     app.register_blueprint(results_bp, url_prefix = "/results") # Register the results blueprint with the app, with the url prefix "/results"
 
+    from app.acknowledgements import bp as acknowledgements_bp
+    app.register_blueprint(acknowledgements_bp, url_prefix = "/acknowledgements") # Register the results blueprint with the app, with the url prefix "/acknowledgements"
+
     '''
     url_prefix is mainly used for jinja2 url_for() function, 
     which generates a URL to the given endpoint with the method provided.

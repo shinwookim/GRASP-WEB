@@ -36,10 +36,11 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-item nav-link" href="#"> Home </a>
-          <a class="nav-item nav-link" href="#">Features</a>
-          <a class="nav-item nav-link" href="#">Pricing</a>
-          <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          <a class="nav-item nav-link" href="{{url_for('home.index')}}">Home</a>
+          <a class="nav-item nav-link" href="{{url_for('experiment.index')}}">New Experiment</a>
+          <a class="nav-item nav-link" href="{{url_for('results.index')}}">Results</a>
+          <a class="nav-item nav-link" href="https://github.com/shinwookim/GRASP-HPO">Source Code</a>
+          <a class="nav-item nav-link" href="{{url_for('acknowledgements.index')}}">Acknowledgements</a>
         </div>
       </div>
     </nav>
@@ -82,8 +83,6 @@
                     Sennott Square Building<br />
                     210 S. Bouquet Street<br />
                     Pittsburgh, PA 15260<br />
-
-                    <a href="mailto:cs@pitt.edu">cs@pitt.edu</a>
                   </p>
                 </div>
               </section>
