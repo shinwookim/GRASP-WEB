@@ -2,16 +2,31 @@
 {% block body %}
 <div class="jumbotron">
   <h1 class="display-4">GRASP-HPO</h1>
-  <p class="lead">
-    <strong>GRASP-HPO</strong> is a novel method of optimizing Hyperparameters
-    in machine learning models.
+  <p>
+    Identifying the right set of hyperparameters to use is critical in training any machine learning model. However,
+    optimally searching for the best set of hyperparameters is a computationally expensive task. Here, we introduce a
+    novel method of tuning hyperparameters, <strong>GRASP-HPO</strong>, which applies the principle of
+    Greedy Randomized Adaptive Search Procedure metaheuristic and evaluate its effectiveness on various datasets
+    compared to other popular hyperparameter optimization algorithms.
+  </p>
+  <p>
+    GRASP-HPO operates in two key phases: a greedy randomized phase and a local search phase. The first greedy
+    randomized phase identifies simple and potentially promising solutions. In this phase we randomly select a subset of
+    hyperparameters. Then, the second local search phase subsequently optimizes these candidate solutions. It tests
+    various combinations of values within a defined threshold for these hyperparameters.
+  </p>
+  <p>
+    By iterating through these two steps, we can use each iteration to focus on different hyperparameters and value
+    combinations. Ultimately, we can identify the best set of hyperparameters to use for a given dataset in this way.
+  </p>
+  <p>
+    Furthermore, we look at a particular application of GRASP-HPO in the context of training a machine learning model
+    that can be used to detect threats in electrical substations using the <a
+      href="https://www.kaggle.com/datasets/sequincozes/ereno-iec61850-ids">
+      ERENO IEC-61850 Intrusion Dataset</a>.
   </p>
 
-  <a
-    href="{{ url_for('experiment.index') }}"
-    type="button"
-    class="btn btn-primary btn-lg"
-  >
+  <a href="{{ url_for('experiment.index') }}" type="button" class="btn btn-primary btn-lg">
     Create New Experiment
   </a>
 </div>
