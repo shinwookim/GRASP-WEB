@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"
+    type="text/css" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/custom.css') }}" type="text/css" />
+
+  <title>{% block title %} GRASP-HPO {% endblock %}</title>
+</head>
+
+<body>
+  <div id="pittbar" class="header" role="banner">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="site-identity">
+            <a href="/">
+              <span>GRASP-HPO</span>
+              Hyperparameter Optimization Using GRASP-Based Techniques
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="container navbar navbar-expand-lg navbar-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="#"> Home </a>
+          <a class="nav-item nav-link" href="#">Features</a>
+          <a class="nav-item nav-link" href="#">Pricing</a>
+          <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="main-container container">
+    <div class="row">
+      <div class="col">{% block body %} {% endblock %}</div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="site_title">
+              <div class="pitt-shield">
+                <img src="{{ url_for('static', filename='img/pitt_shield_white.png') }}" class="h-100"
+                  alt="University of Pittsburgh shield" />
+                <img src="{{ url_for('static', filename='img/pampa_logo_negative.png') }}"
+                  alt="Universidade Federal do Pampa Logo" />
+              </div>
+              <div class="site-identity">
+                <a href="/">
+                  GRASP-HPO: Hyperparameter Optimization Using GRASP-Based Techniques
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="sections">
+              <section>
+                <div class="contact-info">
+                  <p>
+                    University of Pittsburgh<br />
+                    Department of Computer Science<br />
+                    Sennott Square Building<br />
+                    210 S. Bouquet Street<br />
+                    Pittsburgh, PA 15260<br />
+
+                    <a href="mailto:cs@pitt.edu">cs@pitt.edu</a>
+                  </p>
+                </div>
+              </section>
+              <!-- <section>
+                                <h3>Resources</h3>
+                                <ul class="two-column">
+                                    <li><a href="/">Quae ab illo inventore</a></li>
+                                    <li><a href="/">Veritatis et quasi</a></li>
+                                    <li><a href="/">Architecto beatae</a></li>
+                                    <li><a href="/">Vitae dicta sunt</a></li>
+                                    <li><a href="/">Explicabo enim</a></li>
+                                    <li><a href="/">Ipsam voluptatem</a></li>
+                                    <li><a href="/">Aut odit aut fugit</a></li>
+                                    <li><a href="/">Sed quia&nbsp;consequuntur</a></li>
+                                    <li><a href="/">Magni dolores&nbsp;eos qui</a></li>
+                                    <li><a href="/">Ratione voluptatem</a></li>
+                                    <li><a href="/">Sequi nesciunt</a></li>
+                                </ul>
+                            </section> -->
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div id="copyright">
+              <span>Copyright 2023</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"
+    type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"
+    type="text/javascript"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"
+    type="text/javascript"></script>
+</body>
+
+</html>
