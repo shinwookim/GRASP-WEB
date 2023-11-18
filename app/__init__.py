@@ -5,7 +5,7 @@ from config import Config
 def create_app(config_class = Config):
     app = Flask(__name__)
     app.config.from_object(config_class)
-
+    app.config['UPLOAD_FOLDER'] = "./uploads" # Set the upload folder for the app
     # Initialize any extensions here
 
     # Register blueprints here
