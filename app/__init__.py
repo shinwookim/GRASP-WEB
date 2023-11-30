@@ -1,12 +1,14 @@
 from flask import Flask
 
 from config import Config
+from app.extensions import db
 
 def create_app(config_class = Config):
     app = Flask(__name__)
     app.config.from_object(config_class)
-    app.config['UPLOAD_FOLDER'] = "./uploads" # Set the upload folder for the app
+   
     # Initialize any extensions here
+    db.init_app(app)
 
     # Register blueprints here
     from app.home import bp as home_bp
