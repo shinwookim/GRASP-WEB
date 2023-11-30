@@ -9,5 +9,7 @@ Here is a sample version to get the app started.
 FLASK_APP=app
 FLASK_ENV=development
 SECRET_KEY=verysecretkey
+UPLOAD_FOLDER=app/uploads
+DOWNLOAD_FOLDER=app/downloads
 ```
 Once that is done, just use flask run in the GRASP-WEB folder.
