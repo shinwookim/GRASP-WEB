@@ -162,3 +162,5 @@ cython_debug/
 .flaskenv
 .DS_Store
 app.db
+/uploads
+/downloads
