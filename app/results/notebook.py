@@ -1,5 +1,10 @@
 import nbformat
+import shutil
+import os
 from nbconvert.preprocessors import ExecutePreprocessor
+
+def copy_template(template_path, notebook_path):
+    shutil.copyfile(template_path, notebook_path)
 
 def run_notebook(notebook_path):
     with open(notebook_path) as f:
