@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+import os
 import matplotlib.patches as mpatches
 
 def plot_f1_over_time(run):
@@ -62,3 +63,6 @@ def plot_multi_boxplot_time(full_data, dataset, filename, directory):
     plt.boxplot(plot_list,labels=plot_labels)
     plt.ylabel('time (s)')
     plt.savefig(directory+filename+'.png')
+
+def create_filename(dataset, hpo_strategy, run_id, time):
+    return dataset+'_'+hpo_strategy+'_'+str(run_id)+'_'+str(time)+'.png'

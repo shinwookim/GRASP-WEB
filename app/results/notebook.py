@@ -13,4 +13,6 @@ def run_notebook(notebook_path):
     ep.preprocess(nb, {'metadata': {'path': 'notebooks/'}})
     with open(notebook_path, 'wt') as f:
         nbformat.write(nb, f)
-    
+
+def create_notename(dataset, hpo_strategy, run_id, time):
+    return dataset + '_' + hpo_strategy + '_' + run_id + '_' + time + '.ipynb'
