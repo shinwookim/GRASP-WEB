@@ -11,5 +11,6 @@ FLASK_ENV=development
 SECRET_KEY=verysecretkey
 UPLOAD_FOLDER=app/uploads
 DOWNLOAD_FOLDER=app/downloads
+RESULTS_FOLDER=results
 ```
 Once that is done, just use flask run in the GRASP-WEB folder.
