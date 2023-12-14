@@ -3,4 +3,4 @@ flask-sqlalchemy
 python-dotenv
 pandas
 jupyter
-shutil
+matplotlib

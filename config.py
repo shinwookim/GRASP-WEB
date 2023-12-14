@@ -10,4 +10,4 @@ class Config():
     UPLOAD_FOLDER = os.environ.get('UPLOAD_FOLDER') # get the upload folder from the environment variable, or use the default uploads folder
     DOWNLOAD_FOLDER = os.environ.get('DOWNLOAD_FOLDER') # get the download folder from the environment variable, or use the default downloads folder
     RESULTS_FOLDER = os.environ.get('RESULTS_FOLDER') # get the results folder from the environment variable, or use the default results folder
-    CHARTS_FOLDER = os.environ.get('CHARTS_FOLDER') # get the charts folder from the environment variable, or use the default charts folder
+    CHARTS_FOLDER = os.path.join(basedir, 'app/static/charts') # get the charts folder from the environment variable, or use the default charts folder

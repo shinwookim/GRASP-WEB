@@ -5,34 +5,11 @@
 <div class="row">
 
     <div class="col text-center">
-        <img src="https://sites.pitt.edu/~shk148/assets/img/projects/PPG-ML1.png" class="w-100" />
+        <img src="{{ url_for('static', filename = 'charts/' + run_png ) }}" alt="Results" class="w-100" />
+        <img src="{{ url_for('static', filename = 'charts/' + box_png ) }}" alt="Results" class="w-100" />
+        <img src="{{ url_for('static', filename = 'charts/' + time_png ) }}" alt="Results" class="w-100" />
     </div>
-    <div class="col text-center">
-        <strong>Summary</strong>
-        <p class="text-left">
-            The influence of the categorical variable on the regression model is minimal as indicated on the variable
-            importance plot. Hence, using different combinations of these variables do not seem to yield any visible
-            changes. On the other hand, for the classifier, the results of fixing the two categorical variables are
-            huge. By using the hardest prediction combination, most of the classifier’s predictions are non-events.
-            However, if we use the worst-case combinations, most of the predictions are events which seems to signify a
-            high number of false positives. Indeed, in every case besides 100≤𝙶≤150 we seem to get high proportions of
-            events. Hence, we can clearly see that the predictive trends vary among the two combination choices (or any
-            variances in the categorical variable as we saw in the above variable importance analysis). As for the
-            regression’s surface plot, it suggests that the effects of the categorical variables are minimal in
-            determining the predictions (which is backed by our analysis of the variable importance).</p>
-    </div>
-</div>
-<div>
-    <h2>Statistics</h2>
-    <ul>
-        <li>Best Alg: GRASP-HPO</li>
-        <li>Best F1-Score: 0.984620060003265</li>
-        <li>Best Hyperparameters:
-            <code>'objective': 'binary:logistic', 'eval_metric': ['logloss', 'error'], 'max_depth': 3,
-            'min_child_weight': 1, 'subsample': 0.984620060003265, 'eta': 0.0039969648279426055}
-            Best model total accuracy: 0.9713</code>
-        </li>
-    </ul>
+
 </div>
 <button type="button" class="btn btn-primary btn-lg btn-block">Download Results</button>
 {% endblock %}

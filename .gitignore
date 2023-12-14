@@ -165,4 +165,4 @@ app.db
 /uploads
 /downloads
 /results
-/charts
+/static/charts

@@ -28,7 +28,7 @@ def plot_multi_run(full_data, dataset, filename, directory):
     orange_patch = mpatches.Patch(color='orange', label='BOHB')
     green_patch = mpatches.Patch(color='green', label='HyperOpt')
     plt.legend(handles=[red_patch,blue_patch,orange_patch,green_patch], loc='upper right')
-    plt.savefig(directory+filename+'.png')
+    plt.savefig(directory+filename+'run'+'.png')
     
 def plot_multi_boxplot_f1(full_data, dataset, filename, directory):
     f1_dict = {}
@@ -45,7 +45,7 @@ def plot_multi_boxplot_f1(full_data, dataset, filename, directory):
         plot_labels.append(strat)
     plt.boxplot(plot_list,labels=plot_labels)
     plt.ylabel('f1 score')
-    plt.savefig(directory+filename+'.png')
+    plt.savefig(directory+filename+'box'+'.png')
     
 def plot_multi_boxplot_time(full_data, dataset, filename, directory):
     f1_dict = {}
@@ -62,7 +62,7 @@ def plot_multi_boxplot_time(full_data, dataset, filename, directory):
         plot_labels.append(strat)
     plt.boxplot(plot_list,labels=plot_labels)
     plt.ylabel('time (s)')
-    plt.savefig(directory+filename+'.png')
+    plt.savefig(directory+filename+'time'+'.png')
 
 def create_filename(dataset, hpo_strategy, run_id, time):
     return dataset+'_'+hpo_strategy+'_'+str(run_id)+'_'+str(time)+'.png'
