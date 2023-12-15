@@ -1,0 +1,25 @@
+{% extends "default.html" %}
+{% block title %}Results | {{ super() }}{% endblock%}
+{% block body %}
+<h1>Experiment History</h1>
+<div class = "col text-center">
+    <table >
+        <tr>
+            <th>Experiment ID</th>
+            <th>Input Filename</th>
+            <th>Result Filename</th>
+            <th>Result HTML</th>
+            <th>Timestamp</th>
+        </tr>
+        {% for result in results %}
+        <tr>
+            <td>{{ result.id }}</td>
+            <td>{{ result.input_filename }}</td>
+            <td>{{ result.result_filename }}</td>
+            <td>{{ result.result_html }}</td>
+            <td>{{ result.timestamp }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+{% endblock %}

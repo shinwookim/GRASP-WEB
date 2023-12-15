@@ -1,0 +1,12 @@
+{% extends "default.html" %}
+{% block title %}Home | {{ super() }}{% endblock%}
+{% block body %}
+<h1>New Experiment</h1>
+<div class="jumbotron">
+    <code>{{file_name}}</code>
+    <div>
+        {{tables | safe}}
+    </div>
+</div>
+<script src="{{ url_for('static', filename='js/form-wizzard.js') }}" type="text/javascript"></script>
+{% endblock %}

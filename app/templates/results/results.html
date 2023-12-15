@@ -1,0 +1,15 @@
+{% extends "default.html" %}
+{% block title %}Results | {{ super() }}{% endblock%}
+{% block body %}
+<h1>Experiment Results</h1>
+<div class="row">
+
+    <div class="col text-center">
+        <img src="{{ url_for('static', filename = 'charts/' + run_png ) }}" alt="Results" class="w-100" />
+        <img src="{{ url_for('static', filename = 'charts/' + box_png ) }}" alt="Results" class="w-100" />
+        <img src="{{ url_for('static', filename = 'charts/' + time_png ) }}" alt="Results" class="w-100" />
+    </div>
+
+</div>
+<button type="button" class="btn btn-primary btn-lg btn-block">Download Results</button>
+{% endblock %}
