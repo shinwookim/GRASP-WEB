@@ -31,7 +31,7 @@ def index(filename): # View function for the index page
         print(file)
 
     # Add the results to the database
-    return render_template("results/results-bkup.html")
+    return render_template("results/results.html")
     # return render_template("results/results.html", run_png = run_png, box_png = box_png, time_png = time_png) # Render the results template, which will fill any jinja2 template tags with the values provided in the render_template function call
 
 @bp.route("/history")
